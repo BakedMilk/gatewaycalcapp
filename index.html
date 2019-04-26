@@ -1,23 +1,34 @@
 <!doctype html>
 	<head>
 		<title>GatewayCalc App</title>
+
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" rel="stylesheet">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+		rel="stylesheet" 
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+		crossorigin="anonymous">
 		<!--<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
 		<link rel="stylesheet" type="text/css" href="stylesheets/style.css">-->
+		<!-- Bootstrap 4 DatePicker -->
+		
+    </script>
+    <!-- Bootstrap 4 DatePicker closed tag-->
 	</head>
 <body>
 	<header>	
 	
 	</header>
-	<main oninput = "">
+	<main oninput ="getGatewaySerialNumber();">
 	Версия корпуса<input class="bodyVersionId" type="text" value="" /><br>
 	Версия рамки монитора<input class="displayFrameId" type="text" value="" /><br>
 	Цвет<select class="colorId">
   		<option value="B">Черный</option>
   		<option value="G">Серый</option>
 	</select><br>
-	Год изготовления<select class="year">
+	<!--Год изготовления<select class="year">
   		<option value="19">2019</option>
-	</select><br>
+	</select><br>-->
+	<input type="text" id="datepicker">
 	Месяц<select class="month">
   		<option value="04">Апрель</option>
 	</select><br>

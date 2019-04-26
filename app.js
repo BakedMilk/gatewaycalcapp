@@ -1,8 +1,5 @@
-var main = function () {
-
-
+function getGatewaySerialNumber () {
     var bodyVersionId = $('.bodyVersionId').val();
-    
     var displayFrameId = '0' + parseInt("00101", 2);
     var manufacturerId = $('.manufacturerId').val();
     var serialNumber = 1; 
@@ -16,4 +13,7 @@ var main = function () {
     return console.log(gatewayId);
 };
 
-$(document).ready(main);
+$( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+
