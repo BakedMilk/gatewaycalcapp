@@ -14,7 +14,7 @@
 	
 	</header>
 	<main oninput ="getGatewaySerialNumber();">
-	Версия корпуса<select class="bodyVersionId">
+	<p>Версия корпуса</p><select class="bodyVersionId">
 	  		<option value="110">1.1.0</option>
 	  		<option value="120">1.2.0</option>
   		</select><br>
@@ -34,39 +34,35 @@
 			    <tr>
 
 			      <td>
-			      	<div class="form-check form-check-inline">
-	  				<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="1">
+			      	<div class="form-check">
+			      		<input class="form-check-input" type="hidden" value="0" id="isGazePoint" checked="checked">
+		  				<input class="form-check-input" type="checkbox" value="1" id="isGazePoint">
 	  				</div>
 	  			</td>
 	  			<td>
 			      	<div class="form-check form-check-inline">
-	  				<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="1">
+	  				<input class="form-check-input" id="isBarCode" type="checkbox" id="inlineCheckbox1" value="1">
 	  				</div>
 	  			</td>
 	  			<td>
 			      	<div class="form-check form-check-inline">
-	  				<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="1">
+	  				<input class="form-check-input" id="isFingerPrints" type="checkbox" id="inlineCheckbox1" value="1">
+	  				</div>	
+	  			</td>
+	  			<td>
+			      	<div class="form-check form-check-inline">
+	  				<input class="form-check-input" id="isESign" type="checkbox" id="inlineCheckbox1" value="1">
 	  				</div>
 	  			</td>
 	  			<td>
 			      	<div class="form-check form-check-inline">
-	  				<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="1">
-	  				</div>
-	  			</td>
-	  			<td>
-			      	<div class="form-check form-check-inline">
-	  				<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="1">
+	  				<input class="form-check-input" id="isThermoprinter" type="checkbox" id="inlineCheckbox1" value="1">
 	  				</div>
 	  			</td>
 			    </tr>
 			  </tbody>
 			</table>
   		</div>
-
-
-
-
-
 
 	Цвет<select class="colorId">
   		<option value="B">Черный</option>
